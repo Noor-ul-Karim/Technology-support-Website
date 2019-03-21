@@ -19,7 +19,7 @@
     <th>Issue</th>
   </tr>
   <?php
-  $dbc=mysqli_connect("localhost","id3752895_noor","9s6ftt4","id3752895_practice") OR DIE ("ERROR:FAILED TO CONNECT TO SERVER".mysqli_connect_error());
+  $dbc=mysqli_connect() OR DIE ("ERROR:FAILED TO CONNECT TO SERVER".mysqli_connect_error());
 
  $name=(isset($_POST['name']) ? $_POST['name']:null);  
  $room=(isset($_POST['room']) ? $_POST['room']:null);
